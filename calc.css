@@ -1,81 +1,69 @@
-body{
+.main {
     text-align: center;
-    margin-top:auto;
-    background-color:aqua;
+    margin-top: 40px;
 }
 
-.noc{
-    
-    font-size: 18px;
-    color:black;
-    text-align:center;
-    background-color: rgb(244, 199, 199);
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fa1f02;
+    text-shadow: 0 0 3px #080808, 0 0 5px #0000FF;
+    font-family: sans-serif;
+    animation: fadein-out 3s infinite alternate;
+    padding-top: 20px;
+}
+
+.container {
+    /* border: 2px solid red; */
+    /* background-color: black; */
+    width: auto;
+    height: auto;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    margin: auto;
+}
+
+.clc {
+    display: inline-block;
+    border: 3px solid black;
     border-radius: 20px;
-    
+    background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+    padding: 20px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px red;
 }
 
-.outerContainer{
-    background-color:skyblue;
-    text-align:center;
-    
-    background-size:50px;
-    margin:75px;
-    padding: 75px;
+table {
+    margin: auto;
+}
+
+input {
+    font-size: 32px;
+    width: auto;
+    height: 60px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+    border-radius: 21px;
+}
+
+button {
+    font-size: 38px;
+    color: #0b0b0b;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    height: 75px;
+    /* width: 100%; */
+    width: 95px;
+    border: 1px solid black;
     border-radius: 20px;
-
-    color:rgb(177, 175, 175);
+    box-shadow: 0 0 4px rgb(3, 243, 27);
+    /* text-shadow: 0 0 2px black; */
 }
 
-.result{
-    font-size: 20px;
-    text-align:center;
-    width:210px;
-    height: 35px;
-    margin-top:15px;
-    margin-bottom:5px;
-    border-radius: 13px;
-}
-
-button{
-    color:#040404;
-    font-size:15px;
-    cursor:pointer;
-    width:45px;
-    height:45px;
-    margin:3px;
-    padding:3px;
-    text-align: center;
-    background-size:50px;
-    background-color: rgb(227, 225, 222);
-    border-radius:10px;
-    text-shadow: 0.5px 0.5px 0.5px black;
-}
-
-.button0{
-    width:100px;
-    height:45px;
-    border-radius:18px;
-}
-
-.innercontainer{
-    text-align: center;
-    background-color:rgb(106, 208, 249);
-    background:fixed;    
-}
-
-.rowsb{
-    margin-bottom: 5px;
-}
-
-button:hover{
-    background-color: #a0a0a0;
-    
-}
-
-.maincontainer{
-    background-color:rgb(219, 255, 255);
-    border-radius:15px;
-    margin-left: 350px;
-    margin-right: 350px;
-    margin-top:6px;    
+@keyframes fadein-out {
+    0% {
+        opacity: 2;
+    }
+    100% {
+        opacity: 0.5;
+    }
 }
