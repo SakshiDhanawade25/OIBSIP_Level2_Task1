@@ -1,20 +1,22 @@
-let string= "";
-let buttons=document.querySelectorAll('button');
-Array.from(buttons).forEach((button)=>{
-    button.addEventListener('click',(e)=>{
-        if(e.target.innerHTML == "="){
-            string = eval(string);
-            document.querySelector('.result').value = string;
-        }
-        else if(e.target.innerHTML == "Clear"){
-            string = "";
-            document.querySelector('.result').value = string;
-        }
-        else{
-            console.log(e.target)
-            string = string + e.target.innerHTML;
-            document.querySelector('.result').value = string;
-        }
-        
-    })
-})
+var result = document.getElementById("screen");
+
+let calculate = (number) => {
+    result.value += number;
+}
+
+let Result = () => {
+    try {
+        result.value = eval(result.value);
+    } catch (err) {
+        alert("Enter valid input ☹️☹️!!")
+    }
+}
+
+function clr() {
+    result.value = "";
+}
+
+function del() {
+
+    result.value = result.value.slice(0, -1);
+}
